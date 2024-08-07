@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasa APIs</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="sctipt.js" defer></script>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="https://api.nasa.gov/" target="_blank"><h1>{ NASA APIs }</h1></a>
+            <span>
+                <h2><a href="https://apod.nasa.gov/apod/astropix.html" target="_blank">APOD</a> & <a href="">Curiosity</a></h2></a></span>
+        </div>
+        <p>A small project on Nasa APIs</p>   
+    </header>
+    <main>
+        <section class="astronomy-picture">
+            <h2>Astronomy picture of the day</h2>
+            <article id="main-picture">
+                <h4>Loading data...</h4>
+            </article>
+        </section>
+        <section class="previous-images">
+            <h2>Previous images</h2>
+            <div class="pictures-container">
+                <h4>Loading data...</h4>
+            </div>
+        </section>
+        <div class="modal">
+            <div class="modal-img-container"></div>
+            <div class="modal-text-container">
+            </div>
+        </div>
+        <!-- DATI DA MARTE -->
+        <div id="mars-today"></div>
+        <div id="mars-data" style="width: 100%; min-height: 350px;"></div>
+        <div class="curiosity-info"> 
+            <p><span>*</span>Part of NASA's Mars Science Laboratory mission, <em>Curiosity</em> is the largest and most capable rover ever sent to Mars. It launched Nov. 26, 2011 and landed on Mars at 10:32 p.m. PDT on Aug. 5, 2012 (1:32 a.m. EDT on Aug. 6, 2012).</p>
+            <p>
+                Curiosity set out to answer the question: Did Mars ever have the right environmental conditions to support small life forms called microbes? Early in its mission, Curiosity's scientific tools found chemical and mineral evidence of past habitable environments on Mars. It continues to explore the rock record from a time when Mars could have been home to microbial life. <span><a href="https://mars.nasa.gov/msl/home/" target="_blank">Learn more!</a></span></p>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <div>
+                <h5>links:</h5>
+                <ul>
+                    <li><a href="https://api.nasa.gov/" target="_blank">Nasa APIs</a></li>
+                    <li><a href="https://apod.nasa.gov/apod/astropix.html" target="_blank">APOD</a></li>
+                    <li><a href="https://mars.nasa.gov/msl/home/" target="_blank">Curiosity</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>developed by</h5>
+                <address>
+                    Daniele Serenelli <br>
+                    <a href="mailto:serenelli84@gmail.com">@mailme</a>
+                </address>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>
+
+<!-- {
+"copyright": "\nMassimo Di Fusco",
+"date": "2024-03-28",
+"explanation": "Globular star cluster Omega Centauri, also known as NGC 5139, is 15,000 light-years away. The cluster is packed with about 10 million stars much older than the Sun within a volume about 150 light-years in diameter. It's the largest and brightest of 200 or so known globular clusters that roam the halo of our Milky Way galaxy. Though most star clusters consist of stars with the same age and composition, the enigmatic Omega Cen exhibits the presence of different stellar populations with a spread of ages and chemical abundances. In fact, Omega Cen may be the remnant core of a small galaxy merging with the Milky Way. With a yellowish hue, Omega Centauri's red giant stars are easy to pick out in this sharp, color telescopic view.",
+"hdurl": "https://apod.nasa.gov/apod/image/2403/NGC5139_mdf.png",
+"media_type": "image",
+"service_version": "v1",
+"title": "Millions of Stars in Omega Centauri",
+"url": "https://apod.nasa.gov/apod/image/2403/NGC5139_mdf1024.png"
+} -->

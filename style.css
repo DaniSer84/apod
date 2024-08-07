@@ -1,0 +1,325 @@
+:root {
+    --primary-medium: rgb(0, 0, 71);
+    --primary-medium2: rgb(29 29 95);
+    --primary: rgb(87, 135, 183);
+    --primary-dark: #0d121c;
+
+    --s1: 0.6rem;
+    --s2: 1rem;
+    --s3: 1.5rem;
+    --s4: 3.5rem;
+}
+html, body, h1, h2, h3, h5, ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #151010ac; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #555555cd; 
+    border-radius: 3px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #888888c4; 
+  }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+h4 {
+    color: white;
+}
+h2 {
+    font-variant: small-caps;
+    font-size: 1.5rem;
+}
+body {
+    font-family: monospace;
+    background-color: var(--primary-dark);
+}
+header {
+    background-color: var(--primary-medium2);
+    color: white;
+    padding: var(--s2)var(--s2)var(--s1)var(--s2);
+}
+header h1, footer {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--s2);
+}
+header span {
+    font-size: var(--s3);
+    letter-spacing: var(--s1);
+    text-align: right;
+}
+header p {
+    text-align: center;
+    margin: 0;
+    padding-top: var(--s1);
+    font-size: 0.7rem;
+    color: white;
+}
+.astronomy-picture {
+    margin: var(--s4) var(--s3);
+    padding-top: var(--s2);
+    border-radius: var(--s1);
+    background-color: var(--primary);
+    overflow: hidden;
+}
+.astronomy-picture h2 {
+    padding: var(--s1);
+    text-align: center;
+    color: white;
+}
+#main-picture {
+    margin-top: var(--s2);
+    display: flex ;
+    flex-direction: column;
+}
+.text-container {
+    padding: var(--s3);
+    background-color: white;
+}
+#main-picture img {
+    width: 100%;
+    max-height: 50vh;
+    object-fit: cover;
+    object-position: center;
+    cursor: zoom-in;
+}
+.previous-images h2 {
+    /* margin-left: var(--s1); */
+    color: white;
+    text-align: center;
+}
+
+.pictures-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: var(--s1);
+}
+.picture-container {
+    flex: 0 0 100%;
+    border-radius: var(--s1);
+    overflow: hidden;
+    position: relative;
+}
+.picture-container img {
+    object-fit: cover;
+    object-position:left;
+    width: 100%;
+    height: 100%;
+    color: white;
+    cursor: zoom-in;
+    /* max-height: 200px; */
+}
+.picture-container:hover img {
+    filter: brightness(120%);
+}
+.text-container-pic {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: -5px;
+    right: 0px;
+    padding: 0.3rem;
+    cursor: pointer;
+    color: white;
+    max-height: 100%;
+    overflow: auto;
+}
+.text-container-pic h5 {
+    margin: var(--s1);
+}
+.arrowup-title::before {
+    content: '\1F809  ';
+}
+.arrowdown-title::after {
+    content: '   \1F80B';
+    font-size: large;
+    vertical-align:middle;
+}
+.text-container-pic p {
+    font-size: 0.7rem;
+}
+.hide {
+    display: none;
+}
+
+/* *** MODAL *** */
+.modal {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    overflow: auto;
+    display: none;
+    /* cursor: zoom-out; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal-show {
+    display: flex;
+    
+}
+.modal-img-container {
+    width: 100%;
+    /* height: 100%; */
+    height: 80%;
+    overflow: auto;
+    text-align: center;
+}
+.modal-img-container img {
+    height: auto;
+}
+.modal-text-container {
+    color: white;
+    background-color: #00000042;
+    padding: var(--s2);
+    border-radius: var(--s1);
+    max-width: 90%;
+    margin-bottom: var(--s1);
+    overflow: auto;
+    height: 20%;
+    /* height: 0%; */
+}
+
+
+/* **** MARS **** */
+#mars-data {
+    min-height: 350px;
+    position: relative;
+    z-index: -1;
+}
+#mars-today {
+    margin-top: var(--s3);
+    background-color: rgb(204 57 57);
+    /* padding: var(--s2); */
+    border-radius: var(--s1)var(--s1) 0 0 ;
+    color: white;
+    overflow: hidden;
+}
+#mars-today span {
+    color: rgb(83, 0, 0);
+    font-size: 2.2rem;
+    letter-spacing: 0.25rem;
+}
+#mars-today h2 {
+    background-color: rgb(237 170 55);
+    padding: var(--s1);
+}
+#mars-today p {
+    padding: 0 var(--s1);
+}
+.curiosity-info {
+    background-color: white;
+    padding: 0.3rem var(--s4);
+    font-size: 0.6rem;
+    margin-bottom: var(--s2);
+}
+.curiosity-info span{
+    font-size: 0.8rem;
+    margin-right: var(--s1);
+    font-weight: bold;
+}
+.curiosity-info a {
+    color: rgb(237 170 55);
+}
+
+
+/* FOOTER */
+footer {
+    background-color: var(--primary-medium);
+    color: white;
+    padding: var(--s2);
+}
+footer nav {
+    display: flex;
+    justify-content: space-around;
+}
+footer h5 {
+    font-variant: small-caps;
+    margin-bottom: var(--s1);
+}
+footer address {
+    font-size: 0.7rem;
+}
+footer a {
+    color: var(--primary);
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 576px) { 
+    .picture-container {
+        flex: 0 0 calc(50% - 5px);
+    }
+    #main-picture img {
+        max-width: 50%;
+        max-height: 70vh;
+    }
+    #main-picture {
+        flex-direction: row;
+    }
+    .modal {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: var(--s1);
+    }
+    .modal-text-container {
+        max-width: 20%;
+        /* max-height: 90vh; */
+        margin-right: var(--s1);
+        overflow: auto;
+        height: 90%;
+    }
+    .modal-img-container {
+        height: 100%;
+        max-width: 80%;
+        overflow: auto;
+    }
+    .modal-img-container img {
+        width: 100%;
+        height: auto;
+    }
+ }
+
+ 
+@media (min-width: 768px) { 
+     .picture-container {
+         flex: 0 0 calc(33% - 10px);
+     }
+     
+}
+
+@media (min-width: 992px) { 
+     .picture-container {
+         flex: 0 0 calc(25% - 15px);
+     }
+     
+}
+

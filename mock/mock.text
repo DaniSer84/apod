@@ -1,0 +1,4 @@
+vantaggi di usare una cartella mock:
+- evito di fare richieste tutte le volte al sito delle API tutte le volte quando sto sviluppando l'app, tanto mi basta lavorare con dei dati finti che sostituirò quando faccio la chiamata vera.
+- poi posso lavorare anche se il sito della nasa non è disponibile o magari non ho la connessione in quel momento.
+
